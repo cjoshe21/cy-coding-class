@@ -127,6 +127,9 @@
         <li><a href="#verses">Go Back to Verses</a></li>
     </ul>
     <span class="copyright">&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Responsive Web Templates</a></span>
+     <!-- H.3 -->
+        <div style="text-align: center; margin-bottom: 60px;">
+
 </footer>
 </body>
 </html>
@@ -184,26 +187,20 @@
         }
     }
 
-    // H.3-1: write a function called `showVerseContentAndReferenceWhenButtonClicked` that does the following
-    // it takes in 1 string parameter. The parameter is the full id of the 'show' button
-    // @Param 1 is in the format "show-{number}" where {number} is the verse number
-    // when called, it prints ("verse and reference {number} should be shown")
+    function showVerseContentAndReferenceWhenButtonClicked(number) {
+      console.log("verse and reference " + number + " should be shown")
+    }
 
-    // H.3-2: write a function called `hideVerseContentAndReferenceWhenButtonClicked` that does the following
-    // it takes in 1 string parameter. The parameter is the full id of the 'hide' button
-    // @Param 1 is in the format "hide-{number}" where {number} is the verse number
-    // when called, it prints ("verse and reference {number} should be hidden")
+    function hideVerseContentAndReferenceWhenButtonClicked(number) {
+      console.log("verse and reference " + number + " should be shown")
+    }
 
-    // H.3-3: write a function called `toggleVerseContentVisibility` that does the following
-    // it takes in 2 string parameters the first parameter is the full name of the verse content, the second is its visibility
-    // @Param 1 is in the format "verse-content-{number}" where {number} is the verse number
-    // @Param 2 is either "hidden" or "visible"
-    // when called, it prints ("make content {number} {newVisibility}") where {newVisibility} is the opposite of @Param 2
+    function toggleVerseContentVisibility (number, newVisibility) {
+      console.log("make content " + number + " " + newVisibility)
+    }
 
-    // H.3-4: write a function called `toggleVerseReferenceVisibility` that does the following
-    // it takes in 2 string parameters the first parameter is the full name of the verse reference, the second is its visibility
-    // @Param 1 is in the format "verse-content-{number}" where {number} is the verse number
-    // @Param 2 is either "hidden" or "visible"
-    // when called, it prints ("make reference {number} {newVisibility}") where {newVisibility} is the opposite of @Param 2
+    function toggleVerseReferenceVisibility(number, newVisibility) {
+      console.log("make reference " + number + " " + newVisibility)
+    }
 
 </script>
